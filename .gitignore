@@ -328,3 +328,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Thunderstore/plugins/InteractableSpawnFix/InteractableSpawnFix.dll
+/Thunderstore/Thunderstore.zip
+/Thunderstore/README.md
