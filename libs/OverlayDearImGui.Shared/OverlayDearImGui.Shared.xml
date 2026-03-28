@@ -1,0 +1,3103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OverlayDearImGui.Shared</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "P:OverlayDearImGui.Overlay.OverlayToggle" -->
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_HWNDFIRST">
+            <summary>
+            The retrieved handle identifies the window of the same type that is highest in the Z order.
+            <para/>
+            If the specified window is a topmost window, the handle identifies a topmost window.
+            If the specified window is a top-level window, the handle identifies a top-level window.
+            If the specified window is a child window, the handle identifies a sibling window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_HWNDLAST">
+            <summary>
+            The retrieved handle identifies the window of the same type that is lowest in the Z order.
+            <para />
+            If the specified window is a topmost window, the handle identifies a topmost window.
+            If the specified window is a top-level window, the handle identifies a top-level window.
+            If the specified window is a child window, the handle identifies a sibling window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_HWNDNEXT">
+            <summary>
+            The retrieved handle identifies the window below the specified window in the Z order.
+            <para />
+            If the specified window is a topmost window, the handle identifies a topmost window.
+            If the specified window is a top-level window, the handle identifies a top-level window.
+            If the specified window is a child window, the handle identifies a sibling window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_HWNDPREV">
+            <summary>
+            The retrieved handle identifies the window above the specified window in the Z order.
+            <para />
+            If the specified window is a topmost window, the handle identifies a topmost window.
+            If the specified window is a top-level window, the handle identifies a top-level window.
+            If the specified window is a child window, the handle identifies a sibling window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_OWNER">
+            <summary>
+            The retrieved handle identifies the specified window's owner window, if any.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_CHILD">
+            <summary>
+            The retrieved handle identifies the child window at the top of the Z order,
+            if the specified window is a parent window; otherwise, the retrieved handle is NULL.
+            The function examines only child windows of the specified window. It does not examine descendant windows.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.GetWindowType.GW_ENABLEDPOPUP">
+            <summary>
+            The retrieved handle identifies the enabled popup window owned by the specified window (the
+            search uses the first such window found using GW_HWNDNEXT); otherwise, if there are no enabled
+            popup windows, the retrieved handle is that of the specified window.
+            </summary>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.User32.SystemMetric">
+            <summary>
+            Flags used with the Windows API (User32.dll):GetSystemMetrics(SystemMetric smIndex)
+             
+            This Enum and declaration signature was written by Gabriel T. Sharp
+            ai_productions@verizon.net or osirisgothra@hotmail.com
+            Obtained on pinvoke.net, please contribute your code to support the wiki!
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_ARRANGE">
+            <summary>
+            The flags that specify how the system arranged minimized windows. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CLEANBOOT">
+            <summary>
+            The value that specifies how the system is started:
+            0 Normal boot
+            1 Fail-safe boot
+            2 Fail-safe with network boot
+            A fail-safe boot (also called SafeBoot, Safe Mode, or Clean Boot) bypasses the user startup files.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CMONITORS">
+            <summary>
+            The number of display monitors on a desktop. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CMOUSEBUTTONS">
+            <summary>
+            The number of buttons on a mouse, or zero if no mouse is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXBORDER">
+            <summary>
+            The width of a window border, in pixels. This is equivalent to the SM_CXEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXCURSOR">
+            <summary>
+            The width of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXDLGFRAME">
+            <summary>
+            This value is the same as SM_CXFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXDOUBLECLK">
+            <summary>
+            The width of the rectangle around the location of a first click in a double-click sequence, in pixels. ,
+            The second click must occur within the rectangle that is defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system
+            to consider the two clicks a double-click. The two clicks must also occur within a specified time.
+            To set the width of the double-click rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKWIDTH.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXDRAG">
+            <summary>
+            The number of pixels on either side of a mouse-down point that the mouse pointer can move before a drag operation begins.
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation.
+            If this value is negative, it is subtracted from the left of the mouse-down point and added to the right of it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXEDGE">
+            <summary>
+            The width of a 3-D border, in pixels. This metric is the 3-D counterpart of SM_CXBORDER.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels.
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border.
+            This value is the same as SM_CXDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXFOCUSBORDER">
+            <summary>
+            The width of the left and right edges of the focus rectangle that the DrawFocusRectdraws.
+            This value is in pixels.
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXFRAME">
+            <summary>
+            This value is the same as SM_CXSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXFULLSCREEN">
+            <summary>
+            The width of the client area for a full-screen window on the primary display monitor, in pixels.
+            To get the coordinates of the portion of the screen that is not obscured by the system taskbar or by application desktop toolbars,
+            call the SystemParametersInfofunction with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXHSCROLL">
+            <summary>
+            The width of the arrow bitmap on a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXHTHUMB">
+            <summary>
+            The width of the thumb box in a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXICON">
+            <summary>
+            The default width of an icon, in pixels. The LoadIcon function can load only icons with the dimensions
+            that SM_CXICON and SM_CYICON specifies.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXICONSPACING">
+            <summary>
+            The width of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CXICON.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMAXIMIZED">
+            <summary>
+            The default width, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMAXTRACK">
+            <summary>
+            The default maximum width of a window that has a caption and sizing borders, in pixels.
+            This metric refers to the entire desktop. The user cannot drag the window frame to a size larger than these dimensions.
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMENUCHECK">
+            <summary>
+            The width of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMENUSIZE">
+            <summary>
+            The width of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMIN">
+            <summary>
+            The minimum width of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMINIMIZED">
+            <summary>
+            The width of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMINSPACING">
+            <summary>
+            The width of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged.
+            This value is always greater than or equal to SM_CXMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXMINTRACK">
+            <summary>
+            The minimum tracking width of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions.
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXPADDEDBORDER">
+            <summary>
+            The amount of border padding for captioned windows, in pixels. Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXSCREEN">
+            <summary>
+            The width of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, HORZRES).
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXSIZE">
+            <summary>
+            The width of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels.
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border.
+            This value is the same as SM_CXFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXSMICON">
+            <summary>
+            The recommended width of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXSMSIZE">
+            <summary>
+            The width of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXVIRTUALSCREEN">
+            <summary>
+            The width of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors.
+            The SM_XVIRTUALSCREEN metric is the coordinates for the left side of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CXVSCROLL">
+            <summary>
+            The width of a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYBORDER">
+            <summary>
+            The height of a window border, in pixels. This is equivalent to the SM_CYEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYCAPTION">
+            <summary>
+            The height of a caption area, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYCURSOR">
+            <summary>
+            The height of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYDLGFRAME">
+            <summary>
+            This value is the same as SM_CYFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYDOUBLECLK">
+            <summary>
+            The height of the rectangle around the location of a first click in a double-click sequence, in pixels.
+            The second click must occur within the rectangle defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system to consider
+            the two clicks a double-click. The two clicks must also occur within a specified time. To set the height of the double-click
+            rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKHEIGHT.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYDRAG">
+            <summary>
+            The number of pixels above and below a mouse-down point that the mouse pointer can move before a drag operation begins.
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation.
+            If this value is negative, it is subtracted from above the mouse-down point and added below it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYEDGE">
+            <summary>
+            The height of a 3-D border, in pixels. This is the 3-D counterpart of SM_CYBORDER.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels.
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border.
+            This value is the same as SM_CYDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYFOCUSBORDER">
+            <summary>
+            The height of the top and bottom edges of the focus rectangle drawn byDrawFocusRect.
+            This value is in pixels.
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYFRAME">
+            <summary>
+            This value is the same as SM_CYSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYFULLSCREEN">
+            <summary>
+            The height of the client area for a full-screen window on the primary display monitor, in pixels.
+            To get the coordinates of the portion of the screen not obscured by the system taskbar or by application desktop toolbars,
+            call the SystemParametersInfo function with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYHSCROLL">
+            <summary>
+            The height of a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYICON">
+            <summary>
+            The default height of an icon, in pixels. The LoadIcon function can load only icons with the dimensions SM_CXICON and SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYICONSPACING">
+            <summary>
+            The height of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYKANJIWINDOW">
+            <summary>
+            For double byte character set versions of the system, this is the height of the Kanji window at the bottom of the screen, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMAXIMIZED">
+            <summary>
+            The default height, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMAXTRACK">
+            <summary>
+            The default maximum height of a window that has a caption and sizing borders, in pixels. This metric refers to the entire desktop.
+            The user cannot drag the window frame to a size larger than these dimensions. A window can override this value by processing
+            the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMENU">
+            <summary>
+            The height of a single-line menu bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMENUCHECK">
+            <summary>
+            The height of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMENUSIZE">
+            <summary>
+            The height of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMIN">
+            <summary>
+            The minimum height of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMINIMIZED">
+            <summary>
+            The height of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMINSPACING">
+            <summary>
+            The height of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged.
+            This value is always greater than or equal to SM_CYMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYMINTRACK">
+            <summary>
+            The minimum tracking height of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions.
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSCREEN">
+            <summary>
+            The height of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, VERTRES).
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSIZE">
+            <summary>
+            The height of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels.
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border.
+            This value is the same as SM_CYFRAME.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSMCAPTION">
+            <summary>
+            The height of a small caption, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSMICON">
+            <summary>
+            The recommended height of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYSMSIZE">
+            <summary>
+            The height of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYVIRTUALSCREEN">
+            <summary>
+            The height of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors.
+            The SM_YVIRTUALSCREEN metric is the coordinates for the top of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYVSCROLL">
+            <summary>
+            The height of the arrow bitmap on a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_CYVTHUMB">
+            <summary>
+            The height of the thumb box in a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_DBCSENABLED">
+            <summary>
+            Nonzero if User32.dll supports DBCS; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_DEBUG">
+            <summary>
+            Nonzero if the debug version of User.exe is installed; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_DIGITIZER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 or Windows Server 2008 R2 and the Tablet PC Input
+            service is started; otherwise, 0. The return value is a bitmask that specifies the type of digitizer input supported by the device.
+            For more information, see Remarks.
+            Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_IMMENABLED">
+            <summary>
+            Nonzero if Input Method Manager/Input Method Editor features are enabled; otherwise, 0.
+            SM_IMMENABLED indicates whether the system is ready to use a Unicode-based IME on a Unicode application.
+            To ensure that a language-dependent IME works, check SM_DBCSENABLED and the system ANSI code page.
+            Otherwise the ANSI-to-Unicode conversion may not be performed correctly, or some components like fonts
+            or registry settings may not be present.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MAXIMUMTOUCHES">
+            <summary>
+            Nonzero if there are digitizers in the system; otherwise, 0. SM_MAXIMUMTOUCHES returns the aggregate maximum of the
+            maximum number of contacts supported by every digitizer in the system. If the system has only single-touch digitizers,
+            the return value is 1. If the system has multi-touch digitizers, the return value is the number of simultaneous contacts
+            the hardware can provide. Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MEDIACENTER">
+            <summary>
+            Nonzero if the current operating system is the Windows XP, Media Center Edition, 0 if not.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MENUDROPALIGNMENT">
+            <summary>
+            Nonzero if drop-down menus are right-aligned with the corresponding menu-bar item; 0 if the menus are left-aligned.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MIDEASTENABLED">
+            <summary>
+            Nonzero if the system is enabled for Hebrew and Arabic languages, 0 if not.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MOUSEPRESENT">
+            <summary>
+            Nonzero if a mouse is installed; otherwise, 0. This value is rarely zero, because of support for virtual mice and because
+            some systems detect the presence of the port instead of the presence of a mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MOUSEHORIZONTALWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a horizontal scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_MOUSEWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a vertical scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_NETWORK">
+            <summary>
+            The least significant bit is set if a network is present; otherwise, it is cleared. The other bits are reserved for future use.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_PENWINDOWS">
+            <summary>
+            Nonzero if the Microsoft Windows for Pen computing extensions are installed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_REMOTECONTROL">
+            <summary>
+            This system metric is used in a Terminal Services environment to determine if the current Terminal Server session is
+            being remotely controlled. Its value is nonzero if the current session is remotely controlled; otherwise, 0.
+            You can use terminal services management tools such as Terminal Services Manager (tsadmin.msc) and shadow.exe to
+            control a remote session. When a session is being remotely controlled, another user can view the contents of that session
+            and potentially interact with it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_REMOTESESSION">
+            <summary>
+            This system metric is used in a Terminal Services environment. If the calling process is associated with a Terminal Services
+            client session, the return value is nonzero. If the calling process is associated with the Terminal Services console session,
+            the return value is 0.
+            Windows Server 2003 and Windows XP:  The console session is not necessarily the physical console.
+            For more information, seeWTSGetActiveConsoleSessionId.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SAMEDISPLAYFORMAT">
+            <summary>
+            Nonzero if all the display monitors have the same color format, otherwise, 0. Two displays can have the same bit depth,
+            but different color formats. For example, the red, green, and blue pixels can be encoded with different numbers of bits,
+            or those bits can be located in different places in a pixel color value.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SECURE">
+            <summary>
+            This system metric should be ignored; it always returns 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SERVERR2">
+            <summary>
+            The build number if the system is Windows Server 2003 R2; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SHOWSOUNDS">
+            <summary>
+            Nonzero if the user requires an application to present information visually in situations where it would otherwise present
+            the information only in audible form; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SHUTTINGDOWN">
+            <summary>
+            Nonzero if the current session is shutting down; otherwise, 0. Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SLOWMACHINE">
+            <summary>
+            Nonzero if the computer has a low-end (slow) processor; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_STARTER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 Starter Edition, Windows Vista Starter, or Windows XP Starter Edition; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_SWAPBUTTON">
+            <summary>
+            Nonzero if the meanings of the left and right mouse buttons are swapped; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_TABLETPC">
+            <summary>
+            Nonzero if the current operating system is the Windows XP Tablet PC edition or if the current operating system is Windows Vista
+            or Windows 7 and the Tablet PC Input service is started; otherwise, 0. The SM_DIGITIZER setting indicates the type of digitizer
+            input supported by a device running Windows 7 or Windows Server 2008 R2. For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_XVIRTUALSCREEN">
+            <summary>
+            The coordinates for the left side of the virtual screen. The virtual screen is the bounding rectangle of all display monitors.
+            The SM_CXVIRTUALSCREEN metric is the width of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.SystemMetric.SM_YVIRTUALSCREEN">
+            <summary>
+            The coordinates for the top of the virtual screen. The virtual screen is the bounding rectangle of all display monitors.
+            The SM_CYVIRTUALSCREEN metric is the height of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_EXTENDED">
+            <summary>
+            Manipulates the extended key flag.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_DLGMODE">
+            <summary>
+            Manipulates the dialog mode flag, which indicates whether a dialog box is active.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_MENUMODE">
+            <summary>
+            Manipulates the menu mode flag, which indicates whether a menu is active.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_ALTDOWN">
+            <summary>
+            Manipulates the ALT key flag, which indicated if the ALT key is pressed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_REPEAT">
+            <summary>
+            Manipulates the repeat count.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.KeyFlag.KF_UP">
+            <summary>
+            Manipulates the transition state flag.
+            </summary>
+        </member>
+        <member name="M:OverlayDearImGui.Windows.User32.UnregisterClass(System.String,System.IntPtr)">
+             <summary>
+             Unregisters a window class, freeing the memory required for the class.
+             </summary>
+             <param name="lpClassName">
+             Type: LPCTSTR
+             A null-terminated string or a class atom. If lpClassName is a string, it specifies the window class name.
+             This class name must have been registered by a previous call to the RegisterClass or RegisterClassEx function.
+             System classes, such as dialog box controls, cannot be unregistered. If this parameter is an atom,
+               it must be a class atom created by a previous call to the RegisterClass or RegisterClassEx function.
+             The atom must be in the low-order word of lpClassName; the high-order word must be zero.
+            
+             </param>
+             <param name="hInstance">
+             A handle to the instance of the module that created the class.
+            
+             </param>
+             <returns>
+             Type: BOOL
+             If the function succeeds, the return value is nonzero.
+             If the class could not be found or if a window still exists that was created with the class, the return value is zero.
+             To get extended error information, call GetLastError.
+            
+             </returns>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.User32.MonitorInfoEx">
+            <summary>
+            The MONITORINFOEX structure contains information about a display monitor.
+            The GetMonitorInfo function stores information into a MONITORINFOEX structure or a MONITORINFO structure.
+            The MONITORINFOEX structure is a superset of the MONITORINFO structure. The MONITORINFOEX structure adds a string member to contain a name
+            for the display monitor.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.MonitorInfoEx.Size">
+            <summary>
+            The size, in bytes, of the structure. Set this member to sizeof(MONITORINFOEX) (72) before calling the GetMonitorInfo function.
+            Doing so lets the function determine the type of structure you are passing to it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.MonitorInfoEx.Monitor">
+            <summary>
+            A RECT structure that specifies the display monitor rectangle, expressed in virtual-screen coordinates.
+            Note that if the monitor is not the primary display monitor, some of the rectangle's coordinates may be negative values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.MonitorInfoEx.WorkArea">
+            <summary>
+            A RECT structure that specifies the work area rectangle of the display monitor that can be used by applications,
+            expressed in virtual-screen coordinates. Windows uses this rectangle to maximize an application on the monitor.
+            The rest of the area in rcMonitor contains system windows such as the task bar and side bars.
+            Note that if the monitor is not the primary display monitor, some of the rectangle's coordinates may be negative values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.MonitorInfoEx.Flags">
+             <summary>
+             The attributes of the display monitor.
+            
+             This member can be the following value:
+               1 : MONITORINFOF_PRIMARY
+             </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.MonitorInfoEx.DeviceName">
+            <summary>
+            A string that specifies the device name of the monitor being used. Most applications have no use for a display monitor name,
+            and so can save some bytes by using a MONITORINFO structure.
+            </summary>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.User32.RectStruct">
+            <summary>
+            The RECT structure defines the coordinates of the upper-left and lower-right corners of a rectangle.
+            </summary>
+            <remarks>
+            By convention, the right and bottom edges of the rectangle are normally considered exclusive.
+            In other words, the pixel whose coordinates are ( right, bottom ) lies immediately outside of the the rectangle.
+            For example, when RECT is passed to the FillRect function, the rectangle is filled up to, but not including,
+            the right column and bottom row of pixels. This structure is identical to the RECTL structure.
+            </remarks>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.RectStruct.Left">
+            <summary>
+            The x-coordinate of the upper-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.RectStruct.Top">
+            <summary>
+            The y-coordinate of the upper-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.RectStruct.Right">
+            <summary>
+            The x-coordinate of the lower-right corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.RectStruct.Bottom">
+            <summary>
+            The y-coordinate of the lower-right corner of the rectangle.
+            </summary>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.User32.TMEFlags">
+            <summary>
+            The services requested. This member can be a combination of the following values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.TMEFlags.TME_CANCEL">
+            <summary>
+            The caller wants to cancel a prior tracking request. The caller should also specify the type of tracking that it wants to cancel. For example, to cancel hover tracking, the caller must pass the TME_CANCEL and TME_HOVER flags.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.TMEFlags.TME_HOVER">
+            <summary>
+            The caller wants hover notification. Notification is delivered as a WM_MOUSEHOVER message.
+            If the caller requests hover tracking while hover tracking is already active, the hover timer will be reset.
+            This flag is ignored if the mouse pointer is not over the specified window or area.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.TMEFlags.TME_LEAVE">
+            <summary>
+            The caller wants leave notification. Notification is delivered as a WM_MOUSELEAVE message. If the mouse is not over the specified window or area, a leave notification is generated immediately and no further tracking is performed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.TMEFlags.TME_NONCLIENT">
+            <summary>
+            The caller wants hover and leave notification for the nonclient areas. Notification is delivered as WM_NCMOUSEHOVER and WM_NCMOUSELEAVE messages.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.TMEFlags.TME_QUERY">
+            <summary>
+            The function fills in the structure instead of treating it as a tracking request. The structure is filled such that had that structure been passed to TrackMouseEvent, it would generate the current tracking. The only anomaly is that the hover time-out returned is always the actual time-out and not HOVER_DEFAULT, if HOVER_DEFAULT was specified during the original TrackMouseEvent request.
+            </summary>
+        </member>
+        <member name="M:OverlayDearImGui.Windows.User32.GetForegroundWindow">
+            <summary>
+                Retrieves a handle to the foreground window (the window with which the user is currently working). The system
+                assigns a slightly higher priority to the thread that creates the foreground window than it does to other threads.
+                <para>See https://msdn.microsoft.com/en-us/library/windows/desktop/ms633505%28v=vs.85%29.aspx for more information.</para>
+            </summary>
+            <returns>
+                C++ ( Type: Type: HWND )<br /> The return value is a handle to the foreground window. The foreground window
+                can be NULL in certain circumstances, such as when a window is losing activation.
+            </returns>
+        </member>
+        <member name="M:OverlayDearImGui.Windows.User32.DestroyWindow(System.IntPtr)">
+            <summary>
+            <para>The DestroyWindow function destroys the specified window. The function sends WM_DESTROY and WM_NCDESTROY messages to the window to deactivate it and remove the keyboard focus from it. The function also destroys the window's menu, flushes the thread message queue, destroys timers, removes clipboard ownership, and breaks the clipboard viewer chain (if the window is at the top of the viewer chain).</para>
+            <para>If the specified window is a parent or owner window, DestroyWindow automatically destroys the associated child or owned windows when it destroys the parent or owner window. The function first destroys child or owned windows, and then it destroys the parent or owner window.</para>
+            <para>DestroyWindow also destroys modeless dialog boxes created by the CreateDialog function.</para>
+            </summary>
+            <param name="hwnd">Handle to the window to be destroyed.</param>
+            <returns>If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_ACCEPTFILES">
+            <summary>Specifies a window that accepts drag-drop files.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_APPWINDOW">
+            <summary>Forces a top-level window onto the taskbar when the window is visible.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_CLIENTEDGE">
+            <summary>Specifies a window that has a border with a sunken edge.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_COMPOSITED">
+            <summary>
+            Specifies a window that paints all descendants in bottom-to-top painting order using double-buffering.
+            This cannot be used if the window has a class style of either CS_OWNDC or CS_CLASSDC. This style is not supported in Windows 2000.
+            </summary>
+            <remarks>
+            With WS_EX_COMPOSITED set, all descendants of a window get bottom-to-top painting order using double-buffering.
+            Bottom-to-top painting order allows a descendent window to have translucency (alpha) and transparency (color-key) effects,
+            but only if the descendent window also has the WS_EX_TRANSPARENT bit set.
+            Double-buffering allows the window and its descendents to be painted without flicker.
+            </remarks>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_CONTEXTHELP">
+            <summary>
+            Specifies a window that includes a question mark in the title bar. When the user clicks the question mark,
+            the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message.
+            The child window should pass the message to the parent window procedure, which should call the WinHelp function using the HELP_WM_HELP command.
+            The Help application displays a pop-up window that typically contains help for the child window.
+            WS_EX_CONTEXTHELP cannot be used with the WS_MAXIMIZEBOX or WS_MINIMIZEBOX styles.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_CONTROLPARENT">
+            <summary>
+            Specifies a window which contains child windows that should take part in dialog box navigation.
+            If this style is specified, the dialog manager recurses into children of this window when performing navigation operations
+            such as handling the TAB key, an arrow key, or a keyboard mnemonic.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_DLGMODALFRAME">
+            <summary>Specifies a window that has a double border.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_LAYERED">
+            <summary>
+            Specifies a window that is a layered window.
+            This cannot be used for child windows or if the window has a class style of either CS_OWNDC or CS_CLASSDC.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_LAYOUTRTL">
+            <summary>
+            Specifies a window with the horizontal origin on the right edge. Increasing horizontal values advance to the left.
+            The shell language must support reading-order alignment for this to take effect.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_LEFT">
+            <summary>Specifies a window that has generic left-aligned properties. This is the default.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_LEFTSCROLLBAR">
+            <summary>
+            Specifies a window with the vertical scroll bar (if present) to the left of the client area.
+            The shell language must support reading-order alignment for this to take effect.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_LTRREADING">
+            <summary>
+            Specifies a window that displays text using left-to-right reading-order properties. This is the default.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_MDICHILD">
+            <summary>
+            Specifies a multiple-document interface (MDI) child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_NOACTIVATE">
+            <summary>
+            Specifies a top-level window created with this style does not become the foreground window when the user clicks it.
+            The system does not bring this window to the foreground when the user minimizes or closes the foreground window.
+            The window does not appear on the taskbar by default. To force the window to appear on the taskbar, use the WS_EX_APPWINDOW style.
+            To activate the window, use the SetActiveWindow or SetForegroundWindow function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_NOINHERITLAYOUT">
+            <summary>
+            Specifies a window which does not pass its window layout to its child windows.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_NOPARENTNOTIFY">
+            <summary>
+            Specifies that a child window created with this style does not send the WM_PARENTNOTIFY message to its parent window when it is created or destroyed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_OVERLAPPEDWINDOW">
+            <summary>Specifies an overlapped window.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_PALETTEWINDOW">
+            <summary>Specifies a palette window, which is a modeless dialog box that presents an array of commands.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_RIGHT">
+            <summary>
+            Specifies a window that has generic "right-aligned" properties. This depends on the window class.
+            The shell language must support reading-order alignment for this to take effect.
+            Using the WS_EX_RIGHT style has the same effect as using the SS_RIGHT (static), ES_RIGHT (edit), and BS_RIGHT/BS_RIGHTBUTTON (button) control styles.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_RIGHTSCROLLBAR">
+            <summary>Specifies a window with the vertical scroll bar (if present) to the right of the client area. This is the default.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_RTLREADING">
+            <summary>
+            Specifies a window that displays text using right-to-left reading-order properties.
+            The shell language must support reading-order alignment for this to take effect.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_STATICEDGE">
+            <summary>Specifies a window with a three-dimensional border style intended to be used for items that do not accept user input.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_TOOLWINDOW">
+            <summary>
+            Specifies a window that is intended to be used as a floating toolbar.
+            A tool window has a title bar that is shorter than a normal title bar, and the window title is drawn using a smaller font.
+            A tool window does not appear in the taskbar or in the dialog that appears when the user presses ALT+TAB.
+            If a tool window has a system menu, its icon is not displayed on the title bar.
+            However, you can display the system menu by right-clicking or by typing ALT+SPACE.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_TOPMOST">
+            <summary>
+            Specifies a window that should be placed above all non-topmost windows and should stay above them, even when the window is deactivated.
+            To add or remove this style, use the SetWindowPos function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_TRANSPARENT">
+            <summary>
+            Specifies a window that should not be painted until siblings beneath the window (that were created by the same thread) have been painted.
+            The window appears transparent because the bits of underlying sibling windows have already been painted.
+            To achieve transparency without these restrictions, use the SetWindowRgn function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.User32.WindowStylesEx.WS_EX_WINDOWEDGE">
+            <summary>Specifies a window that has a border with a raised edge.</summary>
+        </member>
+        <member name="M:OverlayDearImGui.Windows.Kernel32.VerSetConditionMask(System.UInt64,System.UInt32,System.Byte)">
+            <summary>
+            Sets the bits of a 64-bit value to indicate the comparison operator to use for a specified operating system version attribute. 
+            This function is used to build the dwlConditionMask parameter of the RtlVerifyVersionInfo(NativeTypes.OSVERSIONINFOEX, uint, ulong)  and 
+            </summary>
+            <param name="dwlConditionMask">
+            A value to be passed as the dwlConditionMask parameter of the RtlVerifyVersionInfo(NativeTypes.OSVERSIONINFOEX, uint, ulong) and 
+            </param>
+            <param name="dwTypeBitMask">A mask that indicates the member of NativeTypes.OSVERSIONINFOEX"/> whose comparision operator is being set.
+            This value corresponds to one of the bits specified in the dwTypeMask parameter of RtlVerifyVersionInfo(NativeTypes.OSVERSIONINFOEX, uint, ulong).
+            This parameter can have one of the values from NativeConstants.TypeBitMasks</param>
+            <param name="dwConditionMask"></param>
+            <returns>The function returns the condition mask value.</returns>
+            <remarks> 
+            Before the first call to this function, initialize <paramref name="dwlConditionMask"/> variable to zero. 
+            For subsequent calls, pass in the variable used in the previous call.
+            </remarks>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_BACKOFFICE">
+            <summary>
+            Microsoft BackOffice components are installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_BLADE">
+            <summary>
+            Windows Server 2003, Web Edition is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_COMPUTE_SERVER">
+            <summary>
+            Windows Server 2003, Compute Cluster Edition is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_DATACENTER">
+            <summary>
+            Windows Server 2008 Datacenter, Windows Server 2003, Datacenter Edition, or Windows 2000 Datacenter Server is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_ENTERPRISE">
+            <summary>
+            Windows Server 2008 Enterprise, Windows Server 2003, Enterprise Edition, or Windows 2000 Advanced Server is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_EMBEDDEDNT">
+            <summary>
+            Windows XP Embedded is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_PERSONAL">
+            <summary>
+            Windows Vista Home Premium, Windows Vista Home Basic, or Windows XP Home Edition is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SINGLEUSERTS">
+            <summary>
+            Remote Desktop is supported, but only one interactive session is supported.
+            This value is set unless the system is running in application server mode.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS">
+            <summary>
+            Microsoft Small Business Server was once installed on the system, but may have been upgraded to another version of Windows.
+            </summary>
+            <remarks>
+             You should not rely solely on the <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS"/> flag to determine whether Small Business Server is currently installed.
+             Both this flag and the <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS_RESTRICTED"/> flag are set when this product suite is installed. If you upgrade this
+             installation to Windows Server, Standard Edition, the <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS_RESTRICTED"/> flag is cleared, but the
+             <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS"/> flag remains set, which, in this case, indicates that Small Business Server was previously installed on
+             this system. If this installation is further upgraded to Windows Server, Enterprise Edition, the <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS"/> flag
+             remains set.
+            </remarks>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS_RESTRICTED">
+            <summary>
+            Microsoft Small Business Server is installed with the restrictive client license in force.
+            For more information about this flag bit, see the remarks for <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SMALLBUSINESS"/> flag.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_STORAGE_SERVER">
+            <summary>
+            Windows Storage Server 2003 R2 or Windows Storage Server 2003 is installed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_TERMINAL">
+            <summary>
+            Terminal Services is installed. This value is always set. If <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_TERMINAL"/> is set but <see cref="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_SINGLEUSERTS"/> is not set,
+            the operating system is running in application server mode.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.PRODUCT_SUITE.VER_SUITE_WH_SERVER">
+            <summary>
+            Windows Home Server is installed.
+            </summary>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.OSVERSIONINFOEX">
+            <summary>
+            The RTL_OSVERSIONINFOEXW structure contains operating system version information.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwOSVersionInfoSize">
+            <summary>
+            The size, in bytes, of an RTL_OSVERSIONINFOEXW structure.
+            This member must be set before the structure is used with RtlGetVersion.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwMajorVersion">
+            <summary>
+            The major version number of the operating system. For example, for Windows 2000, the major version number is five.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwMinorVersion">
+            <summary>
+            The minor version number of the operating system. For example, for Windows 2000, the minor version number is zero.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwBuildNumber">
+            <summary>
+            The build number of the operating system.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwPlatformId">
+            <summary>
+            The operating system platform. For Win32 on NT-based operating systems, RtlGetVersion returns the value
+            VER_PLATFORM_WIN32_NT.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.szCSDVersion">
+            <summary>
+            The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which
+            indicates the latest service pack installed on the system. If no service pack is installed, RtlGetVersion might not
+            initialize this string. Initialize szCSDVersion to zero (empty string) before the call to RtlGetVersion.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.wServicePackMajor">
+            <summary>
+            The major version number of the latest service pack installed on the system. For example, for Service Pack 3,
+            the major version number is three. If no service pack has been installed, the value is zero.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.wServicePackMinor">
+            <summary>
+            The minor version number of the latest service pack installed on the system. For example, for Service Pack 3,
+            the minor version number is zero.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.wSuiteMask">
+            <summary>
+            The product suites available on the system. This member is set to zero or to the bitwise OR of one or more of
+            the <see cref="T:OverlayDearImGui.Windows.PRODUCT_SUITE"/> values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.wProductType">
+            <summary>
+            The product type. This member contains additional information about the system.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.wReserved">
+            <summary>
+            Reserved for future use.
+            </summary>
+        </member>
+        <member name="M:OverlayDearImGui.Windows.OSVERSIONINFOEX.Create">
+            <summary>
+            Initializes a new instance of the <see cref="T:OverlayDearImGui.Windows.OSVERSIONINFOEX" /> struct
+            with <see cref="F:OverlayDearImGui.Windows.OSVERSIONINFOEX.dwOSVersionInfoSize" /> set to the correct value.
+            </summary>
+            <returns>
+            A newly initialized instance of <see cref="T:OverlayDearImGui.Windows.OSVERSIONINFOEX"/>.
+            </returns>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.OS_TYPE">
+            <summary>
+            The product type enumeration.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OS_TYPE.VER_NT_WORKSTATION">
+            <summary>
+            The operating system is Windows 8, Windows 7, Windows Vista, Windows XP Professional, Windows XP Home Edition, or Windows 2000 Professional.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OS_TYPE.VER_NT_DOMAIN_CONTROLLER">
+            <summary>
+            The system is a domain controller and the operating system is Windows Server 2012 , Windows Server 2008 R2,
+            Windows Server 2008, Windows Server 2003, or Windows 2000 Server.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.OS_TYPE.VER_NT_SERVER">
+            <summary>
+            The operating system is Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows Server 2003, or Windows 2000 Server.
+            </summary>
+            <remarks>
+            Note that a server that is also a domain controller is reported as <see cref="F:OverlayDearImGui.Windows.OS_TYPE.VER_NT_DOMAIN_CONTROLLER"/>, not <see cref="F:OverlayDearImGui.Windows.OS_TYPE.VER_NT_SERVER"/>.
+            </remarks>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_BUILDNUMBER">
+            <summary>
+            dwBuildNumber
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_MAJORVERSION">
+            <summary>
+            dwBuildNumber
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_MINORVERSION">
+            <summary>
+            dwMinorVersion
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_PLATFORMID">
+            <summary>
+            dwPlatformId
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_PRODUCT_TYPE">
+            <summary>
+            wProductType
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_SERVICEPACKMAJOR">
+            <summary>
+            wServicePackMajor
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_SERVICEPACKMINOR">
+            <summary>
+            wServicePackMinor
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VER_MASK.VER_SUITENAME">
+            <summary>
+            wSuiteMask
+            </summary>
+        </member>
+        <member name="T:OverlayDearImGui.Windows.VirtualKey">
+            <summary>
+            Enumeration for virtual keys.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LeftButton">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.RightButton">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Cancel">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.MiddleButton">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ExtraButton1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ExtraButton2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Back">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Tab">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Clear">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Return">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Shift">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Control">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Menu">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Pause">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.CapsLock">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Kana">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Hangeul">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Hangul">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Junja">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Final">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Hanja">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Kanji">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Escape">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Convert">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.NonConvert">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Accept">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ModeChange">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Space">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Prior">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Next">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.End">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Home">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Left">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Up">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Right">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Down">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Select">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Print">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Execute">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Snapshot">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Insert">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Delete">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Help">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N0">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N3">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N4">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N5">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N6">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N7">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N8">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N9">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.A">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.B">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.C">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.D">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.E">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.G">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.H">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.I">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.J">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.K">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.L">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.M">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.N">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.O">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.P">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Q">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.R">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.S">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.T">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.U">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.V">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.W">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.X">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Y">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Z">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LeftWindows">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.RightWindows">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Application">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Sleep">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad0">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad3">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad4">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad5">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad6">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad7">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad8">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Numpad9">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Multiply">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Add">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Separator">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Subtract">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Decimal">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Divide">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F3">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F4">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F5">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F6">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F7">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F8">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F9">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F10">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F11">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F12">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F13">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F14">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F15">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F16">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F17">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F18">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F19">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F20">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F21">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F22">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F23">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.F24">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.NumLock">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ScrollLock">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.NEC_Equal">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Fujitsu_Jisho">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Fujitsu_Masshou">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Fujitsu_Touroku">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Fujitsu_Loya">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Fujitsu_Roya">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LeftShift">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.RightShift">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LeftControl">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.RightControl">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LeftMenu">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.RightMenu">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserBack">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserForward">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserRefresh">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserStop">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserSearch">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserFavorites">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.BrowserHome">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.VolumeMute">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.VolumeDown">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.VolumeUp">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.MediaNextTrack">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.MediaPrevTrack">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.MediaStop">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.MediaPlayPause">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LaunchMail">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LaunchMediaSelect">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LaunchApplication1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.LaunchApplication2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMPlus">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMComma">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMMinus">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMPeriod">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM3">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM4">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM5">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM6">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM7">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM8">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMAX">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEM102">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ICOHelp">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ICO00">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ProcessKey">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ICOClear">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Packet">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMReset">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMJump">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMPA1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMPA2">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMPA3">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMWSCtrl">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMCUSel">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMATTN">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMFinish">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMCopy">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMAuto">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMENLW">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMBackTab">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.ATTN">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.CRSel">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.EXSel">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.EREOF">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Play">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Zoom">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.Noname">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.PA1">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.VirtualKey.OEMClear">
+            <summary></summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NULL">
+            <summary>
+            The WM_NULL message performs no operation. An application sends the WM_NULL message if it wants to post a message that the
+            recipient window will ignore.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CREATE">
+            <summary>
+            The WM_CREATE message is sent when an application requests that a window be created by calling the CreateWindowEx or
+            CreateWindow function. (The message is sent before the function returns.) The window procedure of the new window receives
+            this message after the window is created, but before the window becomes visible.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DESTROY">
+            <summary>
+            The WM_DESTROY message is sent when a window is being destroyed. It is sent to the window procedure of the window being
+            destroyed after the window is removed from the screen. This message is sent first to the window being destroyed and then to
+            the child windows (if any) as they are destroyed. During the processing of the message, it can be assumed that all child
+            windows still exist. ///
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOVE">
+            <summary>The WM_MOVE message is sent after a window has been moved.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SIZE">
+            <summary>The WM_SIZE message is sent to a window after its size has changed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ACTIVATE">
+            <summary>
+            The WM_ACTIVATE message is sent to both the window being activated and the window being deactivated. If the windows use the
+            same input queue, the message is sent synchronously, first to the window procedure of the top-level window being deactivated,
+            then to the window procedure of the top-level window being activated. If the windows use different input queues, the message
+            is sent asynchronously, so the window is activated immediately.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETFOCUS">
+            <summary>The WM_SETFOCUS message is sent to a window after it has gained the keyboard focus.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_KILLFOCUS">
+            <summary>The WM_KILLFOCUS message is sent to a window immediately before it loses the keyboard focus.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ENABLE">
+            <summary>
+            The WM_ENABLE message is sent when an application changes the enabled state of a window. It is sent to the window whose
+            enabled state is changing. This message is sent before the EnableWindow function returns, but after the enabled state
+            (WS_DISABLED style bit) of the window has changed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETREDRAW">
+            <summary>
+            An application sends the WM_SETREDRAW message to a window to allow changes in that window to be redrawn or to prevent changes
+            in that window from being redrawn.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETTEXT">
+            <summary>An application sends a WM_SETTEXT message to set the text of a window.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETTEXT">
+            <summary>
+            An application sends a WM_GETTEXT message to copy the text that corresponds to a window into a buffer provided by the caller.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETTEXTLENGTH">
+            <summary>
+            An application sends a WM_GETTEXTLENGTH message to determine the length, in characters, of the text associated with a window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PAINT">
+            <summary>
+            The WM_PAINT message is sent when the system or another application makes a request to paint a portion of an application's
+            window. The message is sent when the UpdateWindow or RedrawWindow function is called, or by the DispatchMessage function when
+            the application obtains a WM_PAINT message by using the GetMessage or PeekMessage function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CLOSE">
+            <summary>The WM_CLOSE message is sent as a signal that a window or an application should terminate.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUERYENDSESSION">
+            <summary>
+            The WM_QUERYENDSESSION message is sent when the user chooses to end the session or when an application calls one of the
+            system shutdown functions. If any application returns zero, the session is not ended. The system stops sending
+            WM_QUERYENDSESSION messages as soon as one application returns zero. After processing this message, the system sends the
+            WM_ENDSESSION message with the wParam parameter set to the results of the WM_QUERYENDSESSION message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUERYOPEN">
+            <summary>
+            The WM_QUERYOPEN message is sent to an icon when the user requests that the window be restored to its previous size and position.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ENDSESSION">
+            <summary>
+            The WM_ENDSESSION message is sent to an application after the system processes the results of the WM_QUERYENDSESSION message.
+            The WM_ENDSESSION message informs the application whether the session is ending.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUIT">
+            <summary>
+            The WM_QUIT message indicates a request to terminate an application and is generated when the application calls the
+            PostQuitMessage function. It causes the GetMessage function to return zero.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ERASEBKGND">
+            <summary>
+            The WM_ERASEBKGND message is sent when the window background must be erased (for example, when a window is resized). The
+            message is sent to prepare an invalidated portion of a window for painting.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSCOLORCHANGE">
+            <summary>This message is sent to all top-level windows when a change is made to a system color setting.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SHOWWINDOW">
+            <summary>The WM_SHOWWINDOW message is sent to a window when the window is about to be hidden or shown.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_WININICHANGE">
+            <summary>
+            An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.INI file. The
+            SystemParametersInfo function sends this message after an application uses the function to change a setting in WIN.INI. Note
+            The WM_WININICHANGE message is provided only for compatibility with earlier versions of the system. Applications should use
+            the WM_SETTINGCHANGE message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETTINGCHANGE">
+            <summary>
+            An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.INI file. The
+            SystemParametersInfo function sends this message after an application uses the function to change a setting in WIN.INI. Note
+            The WM_WININICHANGE message is provided only for compatibility with earlier versions of the system. Applications should use
+            the WM_SETTINGCHANGE message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DEVMODECHANGE">
+            <summary>The WM_DEVMODECHANGE message is sent to all top-level windows whenever the user changes device-mode settings.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ACTIVATEAPP">
+            <summary>
+            The WM_ACTIVATEAPP message is sent when a window belonging to a different application than the active window is about to be
+            activated. The message is sent to the application whose window is being activated and to the application whose window is
+            being deactivated.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_FONTCHANGE">
+            <summary>
+            An application sends the WM_FONTCHANGE message to all top-level windows in the system after changing the pool of font resources.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_TIMECHANGE">
+            <summary>A message that is sent whenever there is a change in the system time.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CANCELMODE">
+            <summary>
+            The WM_CANCELMODE message is sent to cancel certain modes, such as mouse capture. For example, the system sends this message
+            to the active window when a dialog box or message box is displayed. Certain functions also send this message explicitly to
+            the specified window regardless of whether it is the active window. For example, the EnableWindow function sends this message
+            when disabling the specified window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETCURSOR">
+            <summary>
+            The WM_SETCURSOR message is sent to a window if the mouse causes the cursor to move within a window and mouse input is not captured.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEACTIVATE">
+            <summary>
+            The WM_MOUSEACTIVATE message is sent when the cursor is in an inactive window and the user presses a mouse button. The parent
+            window receives this message only if the child window passes it to the DefWindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CHILDACTIVATE">
+            <summary>
+            The WM_CHILDACTIVATE message is sent to a child window when the user clicks the window's title bar or when the window is
+            activated, moved, or sized.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUEUESYNC">
+            <summary>
+            The WM_QUEUESYNC message is sent by a computer-based training (CBT) application to separate user-input messages from other
+            messages sent through the WH_JOURNALPLAYBACK Hook procedure.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETMINMAXINFO">
+            <summary>
+            The WM_GETMINMAXINFO message is sent to a window when the size or position of the window is about to change. An application
+            can use this message to override the window's default maximized size and position, or its default minimum or maximum tracking size.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PAINTICON">
+            <summary>
+            Windows NT 3.51 and earlier: The WM_PAINTICON message is sent to a minimized window when the icon is to be painted. This
+            message is not sent by newer versions of Microsoft Windows, except in unusual circumstances explained in the Remarks.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ICONERASEBKGND">
+            <summary>
+            Windows NT 3.51 and earlier: The WM_ICONERASEBKGND message is sent to a minimized window when the background of the icon must
+            be filled before painting the icon. A window receives this message only if a class icon is defined for the window; otherwise,
+            WM_ERASEBKGND is sent. This message is not sent by newer versions of Windows.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NEXTDLGCTL">
+            <summary>
+            The WM_NEXTDLGCTL message is sent to a dialog box procedure to set the keyboard focus to a different control in the dialog box.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SPOOLERSTATUS">
+            <summary>
+            The WM_SPOOLERSTATUS message is sent from Print Manager whenever a job is added to or removed from the Print Manager queue.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DRAWITEM">
+            <summary>
+            The WM_DRAWITEM message is sent to the parent window of an owner-drawn button, combo box, list box, or menu when a visual
+            aspect of the button, combo box, list box, or menu has changed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MEASUREITEM">
+            <summary>
+            The WM_MEASUREITEM message is sent to the owner window of a combo box, list box, list view control, or menu item when the
+            control or menu is created.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DELETEITEM">
+            <summary>
+            Sent to the owner of a list box or combo box when the list box or combo box is destroyed or when items are removed by the
+            LB_DELETESTRING, LB_RESETCONTENT, CB_DELETESTRING, or CB_RESETCONTENT message. The system sends a WM_DELETEITEM message for
+            each deleted item. The system sends the WM_DELETEITEM message for any deleted list box or combo box item with nonzero item data.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_VKEYTOITEM">
+            <summary>Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_KEYDOWN message.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CHARTOITEM">
+            <summary>Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_CHAR message.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETFONT">
+            <summary>An application sends a WM_SETFONT message to specify the font that a control is to use when drawing text.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETFONT">
+            <summary>
+            An application sends a WM_GETFONT message to a control to retrieve the font with which the control is currently drawing its text.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETHOTKEY">
+            <summary>
+            An application sends a WM_SETHOTKEY message to a window to associate a hot key with the window. When the user presses the hot
+            key, the system activates the window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETHOTKEY">
+            <summary>An application sends a WM_GETHOTKEY message to determine the hot key associated with a window.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUERYDRAGICON">
+            <summary>
+            The WM_QUERYDRAGICON message is sent to a minimized (iconic) window. The window is about to be dragged by the user but does
+            not have an icon defined for its class. An application can return a handle to an icon or cursor. The system displays this
+            cursor or icon while the user drags the icon.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COMPAREITEM">
+            <summary>
+            The system sends the WM_COMPAREITEM message to determine the relative position of a new item in the sorted list of an
+            owner-drawn combo box or list box. Whenever the application adds a new item, the system sends this message to the owner of a
+            combo box or list box created with the CBS_SORT or LBS_SORT style.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETOBJECT">
+            <summary>
+            Active Accessibility sends the WM_GETOBJECT message to obtain information about an accessible object contained in a server
+            application. Applications never send this message directly. It is sent only by Active Accessibility in response to calls to
+            AccessibleObjectFromPoint, AccessibleObjectFromEvent, or AccessibleObjectFromWindow. However, server applications handle this message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COMPACTING">
+            <summary>
+            The WM_COMPACTING message is sent to all top-level windows when the system detects more than 12.5 percent of system time over
+            a 30- to 60-second interval is being spent compacting memory. This indicates that system memory is low.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COMMNOTIFY">
+            <summary>WM_COMMNOTIFY is Obsolete for Win32-Based Applications</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_WINDOWPOSCHANGING">
+            <summary>
+            The WM_WINDOWPOSCHANGING message is sent to a window whose size, position, or place in the Z order is about to change as a
+            result of a call to the SetWindowPos function or another window-management function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_WINDOWPOSCHANGED">
+            <summary>
+            The WM_WINDOWPOSCHANGED message is sent to a window whose size, position, or place in the Z order has changed as a result of
+            a call to the SetWindowPos function or another window-management function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_POWER">
+            <summary>
+            Notifies applications that the system, typically a battery-powered personal computer, is about to enter a suspended mode.
+            Use: POWERBROADCAST
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COPYDATA">
+            <summary>An application sends the WM_COPYDATA message to pass data to another application.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CANCELJOURNAL">
+            <summary>
+            The WM_CANCELJOURNAL message is posted to an application when a user cancels the application's journaling activities. The
+            message is posted with a NULL window handle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NOTIFY">
+            <summary>Sent by a common control to its parent window when an event has occurred or the control requires some information.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INPUTLANGCHANGEREQUEST">
+            <summary>
+            The WM_INPUTLANGCHANGEREQUEST message is posted to the window with the focus when the user chooses a new input language,
+            either with the hotkey (specified in the Keyboard control panel application) or from the indicator on the system taskbar. An
+            application can accept the change by passing the message to the DefWindowProc function or reject the change (and prevent it
+            from taking place) by returning immediately.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INPUTLANGCHANGE">
+            <summary>
+            The WM_INPUTLANGCHANGE message is sent to the topmost affected window after an application's input language has been changed.
+            You should make any application-specific settings and pass the message to the DefWindowProc function, which passes the
+            message to all first-level child windows. These child windows can pass the message to DefWindowProc to have it pass the
+            message to their child windows, and so on.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_TCARD">
+            <summary>
+            Sent to an application that has initiated a training card with Microsoft Windows Help. The message informs the application
+            when the user clicks an authorable button. An application initiates a training card by specifying the HELP_TCARD command in a
+            call to the WinHelp function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HELP">
+            <summary>
+            Indicates that the user pressed the F1 key. If a menu is active when F1 is pressed, WM_HELP is sent to the window associated
+            with the menu; otherwise, WM_HELP is sent to the window that has the keyboard focus. If no window has the keyboard focus,
+            WM_HELP is sent to the currently active window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_USERCHANGED">
+            <summary>
+            The WM_USERCHANGED message is sent to all windows after the user has logged on or off. When the user logs on or off, the
+            system updates the user-specific settings. The system sends this message immediately after updating the settings.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NOTIFYFORMAT">
+            <summary>
+            Determines if a window accepts ANSI or Unicode structures in the WM_NOTIFY notification message. WM_NOTIFYFORMAT messages are
+            sent from a common control to its parent window and from the parent window to the common control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CONTEXTMENU">
+            <summary>
+            The WM_CONTEXTMENU message notifies a window that the user clicked the right mouse button (right-clicked) in the window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_STYLECHANGING">
+            <summary>
+            The WM_STYLECHANGING message is sent to a window when the SetWindowLong function is about to change one or more of the
+            window's styles.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_STYLECHANGED">
+            <summary>
+            The WM_STYLECHANGED message is sent to a window after the SetWindowLong function has changed one or more of the window's styles
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DISPLAYCHANGE">
+            <summary>The WM_DISPLAYCHANGE message is sent to all windows when the display resolution has changed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETICON">
+            <summary>
+            The WM_GETICON message is sent to a window to retrieve a handle to the large or small icon associated with a window. The
+            system displays the large icon in the ALT+TAB dialog, and the small icon in the window caption.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SETICON">
+            <summary>
+            An application sends the WM_SETICON message to associate a new large or small icon with a window. The system displays the
+            large icon in the ALT+TAB dialog box, and the small icon in the window caption.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCCREATE">
+            <summary>The WM_NCCREATE message is sent prior to the WM_CREATE message when a window is first created.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCDESTROY">
+            <summary>
+            The WM_NCDESTROY message informs a window that its nonclient area is being destroyed. The DestroyWindow function sends the
+            WM_NCDESTROY message to the window following the WM_DESTROY message. WM_DESTROY is used to free the allocated memory object
+            associated with the window. The WM_NCDESTROY message is sent after the child windows have been destroyed. In contrast,
+            WM_DESTROY is sent before the child windows are destroyed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCCALCSIZE">
+            <summary>
+            The WM_NCCALCSIZE message is sent when the size and position of a window's client area must be calculated. By processing this
+            message, an application can control the content of the window's client area when the size or position of the window changes.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCHITTEST">
+            <summary>
+            The WM_NCHITTEST message is sent to a window when the cursor moves, or when a mouse button is pressed or released. If the
+            mouse is not captured, the message is sent to the window beneath the cursor. Otherwise, the message is sent to the window
+            that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCPAINT">
+            <summary>The WM_NCPAINT message is sent to a window when its frame must be painted.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCACTIVATE">
+            <summary>
+            The WM_NCACTIVATE message is sent to a window when its nonclient area needs to be changed to indicate an active or inactive state.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETDLGCODE">
+            <summary>
+            The WM_GETDLGCODE message is sent to the window procedure associated with a control. By default, the system handles all
+            keyboard input to the control; the system interprets certain types of keyboard input as dialog box navigation keys. To
+            override this default behavior, the control can respond to the WM_GETDLGCODE message to indicate the types of input it wants
+            to process itself.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYNCPAINT">
+            <summary>The WM_SYNCPAINT message is used to synchronize painting while avoiding linking independent GUI threads.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHDESTROYWINDOW">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHDRAWMENU">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHDRAWMENUITEM">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHINITMENU">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHMEASUREMENUITEM">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UAHNCPAINTMENUPOPUP">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMOUSEMOVE">
+            <summary>
+            The WM_NCMOUSEMOVE message is posted to a window when the cursor is moved within the nonclient area of the window. This
+            message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCLBUTTONDOWN">
+            <summary>
+            The WM_NCLBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCLBUTTONUP">
+            <summary>
+            The WM_NCLBUTTONUP message is posted when the user releases the left mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCLBUTTONDBLCLK">
+            <summary>
+            The WM_NCLBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is within the
+            nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the
+            mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCRBUTTONDOWN">
+            <summary>
+            The WM_NCRBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCRBUTTONUP">
+            <summary>
+            The WM_NCRBUTTONUP message is posted when the user releases the right mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCRBUTTONDBLCLK">
+            <summary>
+            The WM_NCRBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is within the
+            nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the
+            mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMBUTTONDOWN">
+            <summary>
+            The WM_NCMBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMBUTTONUP">
+            <summary>
+            The WM_NCMBUTTONUP message is posted when the user releases the middle mouse button while the cursor is within the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMBUTTONDBLCLK">
+            <summary>
+            The WM_NCMBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor is within the
+            nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the
+            mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCXBUTTONDOWN">
+            <summary>
+            The WM_NCXBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is in the
+            nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the
+            mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCXBUTTONUP">
+            <summary>
+            The WM_NCXBUTTONUP message is posted when the user releases the first or second X button while the cursor is in the nonclient
+            area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse, this
+            message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCXBUTTONDBLCLK">
+            <summary>
+            The WM_NCXBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the cursor is in the
+            nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the
+            mouse, this message is not posted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_BM_CLICK">
+            <summary>
+            The WM_INPUT_DEVICE_CHANGE message is sent to the window that registered to receive raw input. A window receives this message
+            through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INPUT_DEVICE_CHANGE">
+            <summary>
+            The WM_INPUT_DEVICE_CHANGE message is sent to the window that registered to receive raw input. A window receives this message
+            through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INPUT">
+            <summary>The WM_INPUT message is sent to the window that is getting raw input.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_KEYFIRST">
+            <summary>This message filters for keyboard messages.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem key is pressed. A nonsystem key is a
+            key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem key is released. A nonsystem key is a
+            key that is pressed when the ALT key is not pressed, or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CHAR">
+            <summary>
+            The WM_CHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translated by the
+            TranslateMessage function. The WM_CHAR message contains the character code of the key that was pressed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DEADCHAR">
+            <summary>
+            The WM_DEADCHAR message is posted to the window with the keyboard focus when a WM_KEYUP message is translated by the
+            TranslateMessage function. WM_DEADCHAR specifies a character code generated by a dead key. A dead key is a key that generates
+            a character, such as the umlaut (double-dot), that is combined with another character to form a composite character. For
+            example, the umlaut-O character (Ö) is generated by typing the dead key for the umlaut character, and then typing the O key.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user presses the F10 key (which activates
+            the menu bar) or holds down the ALT key and then presses another key. It also occurs when no window currently has the
+            keyboard focus; in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that receives the message
+            can distinguish between these two contexts by checking the context code in the lParam parameter.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user releases a key that was pressed while
+            the ALT key was held down. It also occurs when no window currently has the keyboard focus; in this case, the WM_SYSKEYUP
+            message is sent to the active window. The window that receives the message can distinguish between these two contexts by
+            checking the context code in the lParam parameter.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSCHAR">
+            <summary>
+            The WM_SYSCHAR message is posted to the window with the keyboard focus when a WM_SYSKEYDOWN message is translated by the
+            TranslateMessage function. It specifies the character code of a system character key — that is, a character key that is
+            pressed while the ALT key is down.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSDEADCHAR">
+            <summary>
+            The WM_SYSDEADCHAR message is sent to the window with the keyboard focus when a WM_SYSKEYDOWN message is translated by the
+            TranslateMessage function. WM_SYSDEADCHAR specifies the character code of a system dead key — that is, a dead key that is
+            pressed while holding down the ALT key.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UNICHAR">
+            <summary>
+            The WM_UNICHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translated by the
+            TranslateMessage function. The WM_UNICHAR message contains the character code of the key that was pressed. The WM_UNICHAR
+            message is equivalent to WM_CHAR, but it uses Unicode Transformation Format (UTF)-32, whereas WM_CHAR uses UTF-16. It is
+            designed to send or post Unicode characters to ANSI windows and it can can handle Unicode Supplementary Plane characters.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_KEYLAST">
+            <summary>This message filters for keyboard messages.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_STARTCOMPOSITION">
+            <summary>
+            Sent immediately before the IME generates the composition string as a result of a keystroke. A window receives this message
+            through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_ENDCOMPOSITION">
+            <summary>
+            Sent to an application when the IME ends composition. A window receives this message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_COMPOSITION">
+            <summary>
+            Sent to an application when the IME changes composition status as a result of a keystroke. A window receives this message
+            through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_KEYLAST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INITDIALOG">
+            <summary>
+            The WM_INITDIALOG message is sent to the dialog box procedure immediately before a dialog box is displayed. Dialog box
+            procedures typically use this message to initialize controls and carry out any other initialization tasks that affect the
+            appearance of the dialog box.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COMMAND">
+            <summary>
+            The WM_COMMAND message is sent when the user selects a command item from a menu, when a control sends a notification message
+            to its parent window, or when an accelerator keystroke is translated.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSCOMMAND">
+            <summary>
+            A window receives this message when the user chooses a command from the Window menu, clicks the maximize button, minimize
+            button, restore button, close button, or moves the form. You can stop the form from moving by filtering this out.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_TIMER">
+            <summary>
+            The WM_TIMER message is posted to the installing thread's message queue when a timer expires. The message is posted by the
+            GetMessage or PeekMessage function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HSCROLL">
+            <summary>
+            The WM_HSCROLL message is sent to a window when a scroll event occurs in the window's standard horizontal scroll bar. This
+            message is also sent to the owner of a horizontal scroll bar control when a scroll event occurs in the control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_VSCROLL">
+            <summary>
+            The WM_VSCROLL message is sent to a window when a scroll event occurs in the window's standard vertical scroll bar. This
+            message is also sent to the owner of a vertical scroll bar control when a scroll event occurs in the control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INITMENU">
+            <summary>
+            The WM_INITMENU message is sent when a menu is about to become active. It occurs when the user clicks an item on the menu bar
+            or presses a menu key. This allows the application to modify the menu before it is displayed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_INITMENUPOPUP">
+            <summary>
+            The WM_INITMENUPOPUP message is sent when a drop-down menu or submenu is about to become active. This allows an application
+            to modify the menu before it is displayed, without changing the entire menu.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENUSELECT">
+            <summary>The WM_MENUSELECT message is sent to a menu's owner window when the user selects a menu item.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENUCHAR">
+            <summary>
+            The WM_MENUCHAR message is sent when a menu is active and the user presses a key that does not correspond to any mnemonic or
+            accelerator key. This message is sent to the window that owns the menu.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ENTERIDLE">
+            <summary>
+            The WM_ENTERIDLE message is sent to the owner window of a modal dialog box or menu that is entering an idle state. A modal
+            dialog box or menu enters an idle state when no messages are waiting in its queue after it has processed one or more previous messages.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENURBUTTONUP">
+            <summary>
+            The WM_MENURBUTTONUP message is sent when the user releases the right mouse button while the cursor is on a menu item.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENUDRAG">
+            <summary>The WM_MENUDRAG message is sent to the owner of a drag-and-drop menu when the user drags a menu item.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENUGETOBJECT">
+            <summary>
+            The WM_MENUGETOBJECT message is sent to the owner of a drag-and-drop menu when the mouse cursor enters a menu item or moves
+            from the center of the item to the top or bottom of the item.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UNINITMENUPOPUP">
+            <summary>The WM_UNINITMENUPOPUP message is sent when a drop-down menu or submenu has been destroyed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MENUCOMMAND">
+            <summary>The WM_MENUCOMMAND message is sent when the user makes a selection from a menu.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CHANGEUISTATE">
+            <summary>An application sends the WM_CHANGEUISTATE message to indicate that the user interface (UI) state should be changed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UPDATEUISTATE">
+            <summary>
+            An application sends the WM_UPDATEUISTATE message to change the user interface (UI) state for the specified window and all
+            its child windows.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUERYUISTATE">
+            <summary>An application sends the WM_QUERYUISTATE message to retrieve the user interface (UI) state for a window.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORMSGBOX">
+            <summary>
+            The WM_CTLCOLORMSGBOX message is sent to the owner window of a message box before Windows draws the message box. By
+            responding to this message, the owner window can set the text and background colors of the message box by using the given
+            display device context handle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLOREDIT">
+            <summary>
+            An edit control that is not read-only or disabled sends the WM_CTLCOLOREDIT message to its parent window when the control is
+            about to be drawn. By responding to this message, the parent window can use the specified device context handle to set the
+            text and background colors of the edit control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORLISTBOX">
+            <summary>
+            Sent to the parent window of a list box before the system draws the list box. By responding to this message, the parent
+            window can set the text and background colors of the list box by using the specified display device context handle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORBTN">
+            <summary>
+            The WM_CTLCOLORBTN message is sent to the parent window of a button before drawing the button. The parent window can change
+            the button's text and background colors. However, only owner-drawn buttons respond to the parent window processing this message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORDLG">
+            <summary>
+            The WM_CTLCOLORDLG message is sent to a dialog box before the system draws the dialog box. By responding to this message, the
+            dialog box can set its text and background colors using the specified display device context handle.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORSCROLLBAR">
+            <summary>
+            The WM_CTLCOLORSCROLLBAR message is sent to the parent window of a scroll bar control when the control is about to be drawn.
+            By responding to this message, the parent window can use the display context handle to set the background color of the scroll
+            bar control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CTLCOLORSTATIC">
+            <summary>
+            A static control, or an edit control that is read-only or disabled, sends the WM_CTLCOLORSTATIC message to its parent window
+            when the control is about to be drawn. By responding to this message, the parent window can use the specified device context
+            handle to set the text and background colors of the static control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEFIRST">
+            <summary>Use WM_MOUSEFIRST to specify the first mouse message. Use the PeekMessage() Function.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEMOVE">
+            <summary>
+            The WM_MOUSEMOVE message is posted to a window when the cursor moves. If the mouse is not captured, the message is posted to
+            the window that contains the cursor. Otherwise, the message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_LBUTTONDOWN">
+            <summary>
+            The WM_LBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is in the client area of a
+            window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_LBUTTONUP">
+            <summary>
+            The WM_LBUTTONUP message is posted when the user releases the left mouse button while the cursor is in the client area of a
+            window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_LBUTTONDBLCLK">
+            <summary>
+            The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is in the client
+            area of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the
+            message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_RBUTTONDOWN">
+            <summary>
+            The WM_RBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is in the client area of a
+            window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_RBUTTONUP">
+            <summary>
+            The WM_RBUTTONUP message is posted when the user releases the right mouse button while the cursor is in the client area of a
+            window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_RBUTTONDBLCLK">
+            <summary>
+            The WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is in the client
+            area of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the
+            message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MBUTTONDOWN">
+            <summary>
+            The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is in the client area of
+            a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MBUTTONUP">
+            <summary>
+            The WM_MBUTTONUP message is posted when the user releases the middle mouse button while the cursor is in the client area of a
+            window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MBUTTONDBLCLK">
+            <summary>
+            The WM_MBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor is in the client
+            area of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the
+            message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEWHEEL">
+            <summary>
+            The WM_MOUSEWHEEL message is sent to the focus window when the mouse wheel is rotated. The DefWindowProc function propagates
+            the message to the window's parent. There should be no internal forwarding of the message, since DefWindowProc propagates it
+            up the parent chain until it finds a window that processes it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_XBUTTONDOWN">
+            <summary>
+            The WM_XBUTTONDOWN message is posted when the user presses the first or second X button while the cursor is in the client
+            area of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the
+            message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_XBUTTONUP">
+            <summary>
+            The WM_XBUTTONUP message is posted when the user releases the first or second X button while the cursor is in the client area
+            of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is
+            posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_XBUTTONDBLCLK">
+            <summary>
+            The WM_XBUTTONDBLCLK message is posted when the user double-clicks the first or second X button while the cursor is in the
+            client area of a window. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the
+            message is posted to the window that has captured the mouse.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEHWHEEL">
+            <summary>
+            The WM_MOUSEHWHEEL message is sent to the focus window when the mouse's horizontal scroll wheel is tilted or rotated. The
+            DefWindowProc function propagates the message to the window's parent. There should be no internal forwarding of the message,
+            since DefWindowProc propagates it up the parent chain until it finds a window that processes it.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSELAST">
+            <summary>Use WM_MOUSELAST to specify the last mouse message. Used with PeekMessage() Function.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PARENTNOTIFY">
+            <summary>
+            The WM_PARENTNOTIFY message is sent to the parent of a child window when the child window is created or destroyed, or when
+            the user clicks a mouse button while the cursor is over the child window. When the child window is being created, the system
+            sends WM_PARENTNOTIFY just before the CreateWindow or CreateWindowEx function that creates the window returns. When the child
+            window is being destroyed, the system sends the message before any processing to destroy the window takes place.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ENTERMENULOOP">
+            <summary>
+            The WM_ENTERMENULOOP message informs an application's main window procedure that a menu modal loop has been entered.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_EXITMENULOOP">
+            <summary>The WM_EXITMENULOOP message informs an application's main window procedure that a menu modal loop has been exited.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NEXTMENU">
+            <summary>
+            The WM_NEXTMENU message is sent to an application when the right or left arrow key is used to switch between the menu bar and
+            the system menu.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SIZING">
+            <summary>
+            The WM_SIZING message is sent to a window that the user is resizing. By processing this message, an application can monitor
+            the size and position of the drag rectangle and, if needed, change its size or position.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CAPTURECHANGED">
+            <summary>The WM_CAPTURECHANGED message is sent to the window that is losing the mouse capture.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOVING">
+            <summary>
+            The WM_MOVING message is sent to a window that the user is moving. By processing this message, an application can monitor the
+            position of the drag rectangle and, if needed, change its position.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_POWERBROADCAST">
+            <summary>Notifies applications that a power-management event has occurred.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DEVICECHANGE">
+            <summary>Notifies an application of a change to the hardware configuration of a device or the computer.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDICREATE">
+            <summary>
+            An application sends the WM_MDICREATE message to a multiple-document interface (MDI) client window to create an MDI child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIDESTROY">
+            <summary>
+            An application sends the WM_MDIDESTROY message to a multiple-document interface (MDI) client window to close an MDI child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIACTIVATE">
+            <summary>
+            An application sends the WM_MDIACTIVATE message to a multiple-document interface (MDI) client window to instruct the client
+            window to activate a different MDI child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIRESTORE">
+            <summary>
+            An application sends the WM_MDIRESTORE message to a multiple-document interface (MDI) client window to restore an MDI child
+            window from maximized or minimized size.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDINEXT">
+            <summary>
+            An application sends the WM_MDINEXT message to a multiple-document interface (MDI) client window to activate the next or
+            previous child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIMAXIMIZE">
+            <summary>
+            An application sends the WM_MDIMAXIMIZE message to a multiple-document interface (MDI) client window to maximize an MDI child
+            window. The system resizes the child window to make its client area fill the client window. The system places the child
+            window's window menu icon in the rightmost position of the frame window's menu bar, and places the child window's restore
+            icon in the leftmost position. The system also appends the title bar text of the child window to that of the frame window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDITILE">
+            <summary>
+            An application sends the WM_MDITILE message to a multiple-document interface (MDI) client window to arrange all of its MDI
+            child windows in a tile format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDICASCADE">
+            <summary>
+            An application sends the WM_MDICASCADE message to a multiple-document interface (MDI) client window to arrange all its child
+            windows in a cascade format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIICONARRANGE">
+            <summary>
+            An application sends the WM_MDIICONARRANGE message to a multiple-document interface (MDI) client window to arrange all
+            minimized MDI child windows. It does not affect child windows that are not minimized.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIGETACTIVE">
+            <summary>
+            An application sends the WM_MDIGETACTIVE message to a multiple-document interface (MDI) client window to retrieve the handle
+            to the active MDI child window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDISETMENU">
+            <summary>
+            An application sends the WM_MDISETMENU message to a multiple-document interface (MDI) client window to replace the entire
+            menu of an MDI frame window, to replace the window menu of the frame window, or both.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ENTERSIZEMOVE">
+            <summary>
+            The WM_ENTERSIZEMOVE message is sent one time to a window after it enters the moving or sizing modal loop. The window enters
+            the moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window passes the
+            WM_SYSCOMMAND message to the DefWindowProc function and the wParam parameter of the message specifies the SC_MOVE or SC_SIZE
+            value. The operation is complete when DefWindowProc returns. The system sends the WM_ENTERSIZEMOVE message regardless of
+            whether the dragging of full windows is enabled.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_EXITSIZEMOVE">
+            <summary>
+            The WM_EXITSIZEMOVE message is sent one time to a window, after it has exited the moving or sizing modal loop. The window
+            enters the moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window
+            passes the WM_SYSCOMMAND message to the DefWindowProc function and the wParam parameter of the message specifies the SC_MOVE
+            or SC_SIZE value. The operation is complete when DefWindowProc returns.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DROPFILES">
+            <summary>
+            Sent when the user drops a file on the window of an application that has registered itself as a recipient of dropped files.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MDIREFRESHMENU">
+            <summary>
+            An application sends the WM_MDIREFRESHMENU message to a multiple-document interface (MDI) client window to refresh the window
+            menu of the MDI frame window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_SETCONTEXT">
+            <summary>Sent to an application when a window is activated. A window receives this message through its WindowProc function.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_NOTIFY">
+            <summary>
+            Sent to an application to notify it of changes to the IME window. A window receives this message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_CONTROL">
+            <summary>
+            Sent by an application to direct the IME window to carry out the requested command. The application uses this message to
+            control the IME window that it has created. To send this message, the application calls the SendMessage function with the
+            following parameters.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_COMPOSITIONFULL">
+            <summary>
+            Sent to an application when the IME window finds no space to extend the area for the composition window. A window receives
+            this message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_SELECT">
+            <summary>
+            Sent to an application when the operating system is about to change the current IME. A window receives this message through
+            its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_CHAR">
+            <summary>
+            Sent to an application when the IME gets a character of the conversion result. A window receives this message through its
+            WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_REQUEST">
+            <summary>
+            Sent to an application to provide commands and request information. A window receives this message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_KEYDOWN">
+            <summary>
+            Sent to an application by the IME to notify the application of a key press and to keep message order. A window receives this
+            message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_IME_KEYUP">
+            <summary>
+            Sent to an application by the IME to notify the application of a key release and to keep message order. A window receives
+            this message through its WindowProc function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSEHOVER">
+            <summary>
+            The WM_MOUSEHOVER message is posted to a window when the cursor hovers over the client area of the window for the period of
+            time specified in a prior call to TrackMouseEvent.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_MOUSELEAVE">
+            <summary>
+            The WM_MOUSELEAVE message is posted to a window when the cursor leaves the client area of the window specified in a prior
+            call to TrackMouseEvent.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMOUSEHOVER">
+            <summary>
+            The WM_NCMOUSEHOVER message is posted to a window when the cursor hovers over the nonclient area of the window for the period
+            of time specified in a prior call to TrackMouseEvent.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_NCMOUSELEAVE">
+            <summary>
+            The WM_NCMOUSELEAVE message is posted to a window when the cursor leaves the nonclient area of the window specified in a
+            prior call to TrackMouseEvent.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_WTSSESSION_CHANGE">
+            <summary>The WM_WTSSESSION_CHANGE message notifies applications of changes in session state.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_TABLET_FIRST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_TABLET_LAST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DPICHANGED">
+            <summary>
+            The WM_DISPLAYCHANGE message is sent when the effective dots per inch (dpi) for a window has changed. The DPI is the scale
+            factor for a window.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CUT">
+            <summary>
+            An application sends a WM_CUT message to an edit control or combo box to delete (cut) the current selection, if any, in the
+            edit control and copy the deleted text to the clipboard in CF_TEXT format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_COPY">
+            <summary>
+            An application sends the WM_COPY message to an edit control or combo box to copy the current selection to the clipboard in
+            CF_TEXT format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PASTE">
+            <summary>
+            An application sends a WM_PASTE message to an edit control or combo box to copy the current content of the clipboard to the
+            edit control at the current caret position. Data is inserted only if the clipboard contains data in CF_TEXT format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CLEAR">
+            <summary>
+            An application sends a WM_CLEAR message to an edit control or combo box to delete (clear) the current selection, if any, from
+            the edit control.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_UNDO">
+            <summary>
+            An application sends a WM_UNDO message to an edit control to undo the last operation. When this message is sent to an edit
+            control, the previously deleted text is restored or the previously added text is deleted.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_RENDERFORMAT">
+            <summary>
+            The WM_RENDERFORMAT message is sent to the clipboard owner if it has delayed rendering a specific clipboard format and if an
+            application has requested data in that format. The clipboard owner must render data in the specified format and place it on
+            the clipboard by calling the SetClipboardData function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_RENDERALLFORMATS">
+            <summary>
+            The WM_RENDERALLFORMATS message is sent to the clipboard owner before it is destroyed, if the clipboard owner has delayed
+            rendering one or more clipboard formats. For the content of the clipboard to remain available to other applications, the
+            clipboard owner must render data in all the formats it is capable of generating, and place the data on the clipboard by
+            calling the SetClipboardData function.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DESTROYCLIPBOARD">
+            <summary>
+            The WM_DESTROYCLIPBOARD message is sent to the clipboard owner when a call to the EmptyClipboard function empties the clipboard.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DRAWCLIPBOARD">
+            <summary>
+            The WM_DRAWCLIPBOARD message is sent to the first window in the clipboard viewer chain when the content of the clipboard
+            changes. This enables a clipboard viewer window to display the new content of the clipboard.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PAINTCLIPBOARD">
+            <summary>
+            The WM_PAINTCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in
+            the CF_OWNERDISPLAY format and the clipboard viewer's client area needs repainting.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_VSCROLLCLIPBOARD">
+            <summary>
+            The WM_VSCROLLCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data
+            in the CF_OWNERDISPLAY format and an event occurs in the clipboard viewer's vertical scroll bar. The owner should scroll the
+            clipboard image and update the scroll bar values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SIZECLIPBOARD">
+            <summary>
+            The WM_SIZECLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in
+            the CF_OWNERDISPLAY format and the clipboard viewer's client area has changed size.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_ASKCBFORMATNAME">
+            <summary>
+            The WM_ASKCBFORMATNAME message is sent to the clipboard owner by a clipboard viewer window to request the name of a
+            CF_OWNERDISPLAY clipboard format.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CHANGECBCHAIN">
+            <summary>
+            The WM_CHANGECBCHAIN message is sent to the first window in the clipboard viewer chain when a window is being removed from
+            the chain.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HSCROLLCLIPBOARD">
+            <summary>
+            The WM_HSCROLLCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window. This occurs when the clipboard
+            contains data in the CF_OWNERDISPLAY format and an event occurs in the clipboard viewer's horizontal scroll bar. The owner
+            should scroll the clipboard image and update the scroll bar values.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_QUERYNEWPALETTE">
+            <summary>
+            This message informs a window that it is about to receive the keyboard focus, giving the window the opportunity to realize
+            its logical palette when it receives the focus.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PALETTEISCHANGING">
+            <summary>The WM_PALETTEISCHANGING message informs applications that an application is going to realize its logical palette.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PALETTECHANGED">
+            <summary>
+            This message is sent by the OS to all top-level and overlapped windows after the window with the keyboard focus realizes its
+            logical palette. This message enables windows that do not have the keyboard focus to realize their logical palettes and
+            update their client areas.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HOTKEY">
+            <summary>
+            The WM_HOTKEY message is posted when the user presses a hot key registered by the RegisterHotKey function. The message is
+            placed at the top of the message queue associated with the thread that registered the hot key.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PRINT">
+            <summary>
+            The WM_PRINT message is sent to a window to request that it draw itself in the specified device context, most commonly in a
+            printer device context.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PRINTCLIENT">
+            <summary>
+            The WM_PRINTCLIENT message is sent to a window to request that it draw its client area in the specified device context, most
+            commonly in a printer device context.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_APPCOMMAND">
+            <summary>
+            The WM_APPCOMMAND message notifies a window that the user generated an application command event, for example, by clicking an
+            application command button using the mouse or typing an application command key on the keyboard.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_THEMECHANGED">
+            <summary>
+            The WM_THEMECHANGED message is broadcast to every window following a theme change event. Examples of theme change events are
+            the activation of a theme, the deactivation of a theme, or a transition from one theme to another.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CLIPBOARDUPDATE">
+            <summary>Sent when the contents of the clipboard have changed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DWMCOMPOSITIONCHANGED">
+            <summary>
+            The system will send a window the WM_DWMCOMPOSITIONCHANGED message to indicate that the availability of desktop composition
+            has changed.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DWMNCRENDERINGCHANGED">
+            <summary>
+            WM_DWMNCRENDERINGCHANGED is called when the non-client area rendering status of a window has changed. Only windows that have
+            set the flag DWM_BLURBEHIND.fTransitionOnMaximized to true will get this message.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DWMCOLORIZATIONCOLORCHANGED">
+            <summary>Sent to all top-level windows when the colorization color has changed.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_DWMWINDOWMAXIMIZEDCHANGE">
+            <summary>
+            WM_DWMWINDOWMAXIMIZEDCHANGE will let you know when a DWM composed window is maximized. You also have to register for this
+            message as well. You'd have other window go opaque when this message is sent.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_GETTITLEBARINFOEX">
+            <summary>Sent to request extended title bar information. A window receives this message through its WindowProc function.</summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HANDHELDFIRST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_HANDHELDLAST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_AFXFIRST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_AFXLAST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PENWINFIRST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_PENWINLAST">
+            <summary/>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_APP">
+            <summary>
+            The WM_APP constant is used by applications to help define private messages, usually of the form WM_APP+X, where X is an
+            integer value.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_USER">
+            <summary>
+            The WM_USER constant is used by applications to help define private messages for use by private window classes, usually of
+            the form WM_USER+X, where X is an integer value.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CPL_LAUNCH">
+            <summary>
+            An application sends the WM_CPL_LAUNCH message to Windows Control Panel to request that a Control Panel application be started.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_CPL_LAUNCHED">
+            <summary>
+            The WM_CPL_LAUNCHED message is sent when a Control Panel application, started by the WM_CPL_LAUNCH message, has closed. The
+            WM_CPL_LAUNCHED message is sent to the window identified by the wParam parameter of the WM_CPL_LAUNCH message that started
+            the application.
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_REFLECT">
+            <summary>
+            Reflects messages back to child controls. Sometimes you want to write a self-contained control based on standard Windows
+            control, typically by using subclassing or superclassing. Unfortunately, most standard controls send interesting
+            notifications to their parents, not to themselves, so your window proc won't normally receive them. A parent window could
+            help by reflecting (sending) those messages back to the child window so that your window proc could process them. By
+            convention, a message WM_X is reflected back as (OCM__BASE + WM_X). This is mainly to avoid conflicts with real notifications
+            coming from the child windows of the control (e.g. a list view control has a header control as its child window, and receives
+            WM_NOTIFY from the header. It would be inconvenient if you had to figure out every time whether WM_NOTIFY came from the
+            header or reflected from your parent).
+            </summary>
+        </member>
+        <member name="F:OverlayDearImGui.Windows.WindowMessage.WM_SYSTIMER">
+            <summary>
+            WM_SYSTIMER is a well-known yet still undocumented message. Windows uses WM_SYSTIMER for internal actions like scrolling.
+            </summary>
+        </member>
+        <member name="T:AutoThunderstoreVersion.AutoVersionAttribute">
+            <summary>
+            Add a PluginVersion field to the attribut-ed class filled from the thunderstore.toml versionNumber field
+            </summary>
+        </member>
+    </members>
+</doc>

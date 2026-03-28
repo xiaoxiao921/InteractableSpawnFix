@@ -1,0 +1,11 @@
+﻿{
+	"name": "InteractableSpawnFix",
+	"version_number": "1.0.0",
+	"website_url": "",
+	"description": ""InteractableSpawnFix",",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.2108",
+		"RiskofThunder-HookGenPatcher-1.2.3",
+		"xiaoxiao921-OverlayDearImGui_BepInEx5-2.0.0"
+	]
+}
