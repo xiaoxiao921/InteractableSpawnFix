@@ -2,7 +2,7 @@
 	"name": "InteractableSpawnFix",
 	"version_number": "1.0.0",
 	"website_url": "",
-	"description": ""InteractableSpawnFix",",
+	"description": "Let you block interactable spawns from spawning in areas where they would be inaccessible or cause issues.",
 	"dependencies": [
 		"bbepis-BepInExPack-5.4.2108",
 		"RiskofThunder-HookGenPatcher-1.2.3",
